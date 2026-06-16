@@ -1,0 +1,590 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 1920px;
+}
+
+.container {
+    overflow: hidden;
+    width: 1201px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.btn1 {
+    border: none;
+    background-color: #FCCA3A;
+    padding: 22px 52px;
+    border-radius: 9999px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22%;
+    height: 66px;
+}
+
+.btn1:hover {
+    box-shadow: 0 0 36px #FCCA3AE6;
+    cursor: pointer;
+
+}
+
+.btn2 {
+    border: none;
+    background-color: #1168AC;
+    border-radius: 9999px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22%;
+    height: 50px;
+    width: 230px;
+    color: #fff;
+
+}
+
+.btn2:hover {
+    background-color: #00508F;
+    cursor: pointer;
+}
+
+/* header */
+
+.header_navigation_main {
+    background: url("../img/heder_main_background.jpg") no-repeat;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 17px;
+}
+
+.header-menu {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 17px
+}
+
+.header-menu li {
+    float: left;
+    margin: 20px 0px 19px 0px;
+    padding: 21px;
+    
+}
+
+.header-menu li:hover {
+    color: #FCCA3A;
+    cursor: pointer;
+}
+
+.phone-block {
+    float: right;
+    width: 217px;
+    color: #fff;
+    text-align: center;
+    margin: 25px 4px 23px -5px;
+}
+
+.phone-number {
+    height: 26px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.operating_mode {
+    height: 17px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.company-contacts button {
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 23px;
+}
+
+/* navigation */
+
+.navigation {
+    background-color: #FCCA3ACC;
+    text-align: center;
+}
+
+.navigation_menu {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 38px;
+    
+}
+
+.navigation_menu li {
+    display: inline-block;
+    margin-top: 2px;
+    padding:  0px 18px;
+    cursor: pointer;
+}
+
+/* main */
+
+.main h1 {
+    float: left;
+    color: #fff;
+    margin-top: 172px;
+}
+
+.main span {
+    color: #FCCA3A;
+}
+
+.main_card {
+    float: left;
+    margin-top: 50px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;   
+}
+
+.main_shield {
+    float: left;
+    margin-top: 50px;
+    margin-left: 45px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.main_card img {
+    float: left;
+    margin-top: -5px;
+    margin-right: 20px;
+}
+
+.main_shield img {
+    float: left;
+    margin-top: -5px;
+    margin-right: 20px;
+}
+
+/*main_form*/
+
+.main_form {
+    float: right;
+    text-align: center;
+    width: 368px;
+    height: 482px;
+    background-color: #4D4D4D;
+    border-radius: 8px;
+    margin-top: 84px;
+    margin-bottom: 82px;
+}
+
+.main_form p:first-child {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 26px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.main_form p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main_form input {
+    width: 308px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.main_form input:nth-child(5) {
+    margin-bottom: 16px;
+}
+
+.input_form {
+    width: 18px;
+    height: 18px;
+    display: none;
+}
+
+.label_form {
+    float: left;
+    margin-left: 20px;
+    margin-top: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #FCCA3A;
+    background-size: 12px;
+    display: block;
+        
+}
+
+.input_form:checked+.label_form {
+    background-image: url(../img/Vector_form.svg);
+    background-position: 3px 4px;
+    background-repeat: no-repeat;
+}
+
+.main_form label {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #fff;
+}
+
+.main_form label:nth-child(3) {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.main_form label:nth-child(7) {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.main_form button {
+    width: 308px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.main_form label:nth-child(13) {
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: -20px;
+}
+
+/* advantages */
+
+.advantages {
+    padding-top: 133px;
+    padding-bottom: 120px;
+}
+
+.advantages h3 {
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.advantage-tile {
+    width: 360px;
+    text-align: center;
+}
+
+.tile_blue1, .tile1 {
+    float: left;
+}
+
+.tile_blue2, .tile2 {
+    margin: 0 auto;
+}
+
+.tile_blue3, .tile3 {
+    float: right;
+}
+
+.title-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #1168AC;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 26px;
+}
+
+.advantages span {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.title-icon1 {
+    background-image: url(../img/Vector.svg);
+}
+
+.title-icon2 {
+    background-image: url(../img/handshake\ 1.svg);
+}
+
+.title-icon3 {
+    background-image: url(../img/Delivery-packages.svg);  
+}
+
+.advantages img {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+/*tariffs*/
+
+.tariffs {
+    background-color: #D4EFFC;
+}
+
+.tariffs h3 {
+    text-align: center;
+    margin-top: 131px;
+} 
+
+.order_amount {
+    text-align: center;
+    margin-top: 24px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.tariffs-menu {
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 11px;
+}
+
+.tariffs-menu li {
+    display: inline;
+    margin-left: 55px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.tariffs-menu li:first-child {
+    margin-left: 0;
+}
+
+.capital_tariff {
+    float: left;
+    border: 2px #FCCA3A solid;
+    border-radius: 9px;
+    margin-bottom: 140px;
+    margin-left: 70px;
+    background-color: #fff;
+    width: 1046px;
+}
+
+.capital_tariff_price {
+    float: left;
+    border-right: 2px #FCCA3A solid;
+    margin-top: 40px;
+    margin-bottom: 41px;
+    margin-right: 60px;
+}
+
+.price {
+    color: #1168AC;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 16px;   
+}
+
+.price span {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.discount_precentage {
+    text-align: center;
+    font-style: 14px;
+    line-height: 22px;
+    font-weight: 300; 
+}
+
+.discount_precentage span {
+    color: #E53935;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.capital_tariff_price button {
+    text-align: center;
+    margin: 20px 60px 30px 60px;
+    width: 243px;
+}
+
+.photo_room {
+    display: block;
+    width: 243px;
+    height: 137px;
+    border-radius: 10px;
+    margin: 0px 60px;
+}
+
+.renovation_photo {
+    float: left;
+    padding: 13px 60px 0px 60px;
+}
+
+.renovation_photo img {
+    float: left;
+}
+
+.renovation_photo p {
+    float: left;
+    font-size: 13px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.renovation_photo span {
+    color: #E53935;
+    font-weight: 700;
+}
+
+.capital_finishing_rough_materials {
+    float: right;
+    margin-right: 47px;
+    margin-top: 20px;
+}
+
+.capital_finishing_rough_materials h5 {
+    padding-top: 16px;
+    padding-bottom: 3px;
+
+}
+
+.capital_finishing_rough_materials li {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 15px;
+    padding-left: 6px;
+    padding-top: 9px;
+}
+
+.capital_finishing_rough_materials li::marker {
+    content: url(../img/check_mark.svg);
+}
+
+.capital_finishing_rough_materials p {
+    color: #1168AC;
+    line-height: 0.7;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.capital_finishing_rough_materials span {
+    font-size: 12px;
+    font-weight: 300;
+    
+}
+
+.capital_menu_works {
+    margin-top: 36px;
+    margin-left: 10px;
+
+}
+
+.capital_menu_works h5 {
+    padding-bottom: 3px;
+}
+
+.capital_menu_works li {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 430px;
+    padding-left: 6px;
+    padding-top: 9px;
+    
+}
+
+.capital_menu_works li::marker {
+    content: url(../img/check_mark.svg);
+}
+
+/*calculator*/
+
+.calculator img {
+    float: left;
+    width: 538px;
+    height: 682px;
+    margin-top: 141px;
+    margin-left: -4px;
+
+}
+
+.leonid {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 729px;
+    margin-left: -120px;
+}
+
+.calculator_price {
+    float: right;
+    margin-top: 186px;
+}
+
+.calculator_price h6 {
+    margin-top: 72px;
+    margin-bottom: 25px;
+}
+
+.calculator_price p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.calculator_price button {
+    margin-top: 41px;
+    width: 308px;
+}
+
+
+
