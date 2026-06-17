@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,6 +18,11 @@ body {
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 h1 {
@@ -84,6 +90,7 @@ h6 {
 
 /* header */
 
+
 .header_navigation_main {
     background: url("../img/heder_main_background.jpg") no-repeat;
 }
@@ -144,6 +151,7 @@ h6 {
 /* navigation */
 
 .navigation {
+    height: 40px;
     background-color: #FCCA3ACC;
     text-align: center;
 }
@@ -368,6 +376,10 @@ h6 {
 
 /*tariffs*/
 
+.tariffs .container {
+    height: 946px;
+}
+
 .tariffs {
     background-color: #D4EFFC;
 }
@@ -380,30 +392,73 @@ h6 {
 .order_amount {
     text-align: center;
     margin-top: 24px;
+    margin-bottom: 38px;
     line-height: 30px;
     font-size: 22px;
     font-weight: 200;
 }
 
-.tariffs-menu {
-    text-align: center;
-    margin-top: 53px;
-    margin-bottom: 11px;
+/*cards_tariffs input radio*/
+
+.cards_tariffs {
+    position: relative;
 }
 
-.tariffs-menu li {
-    display: inline;
-    margin-left: 55px;
+.radio-folder
+{
+    display: none;
+}
+
+.radio-folder + label
+{
+        
+    float: left;
     font-size: 22px;
     font-weight: 500;
     line-height: 30px;
+
+    position: relative;
+    z-index: 2;
+    
+    display: block;
+    margin-right: 26px;
+    padding: 9.5px 16px;
+    border-radius: 8px 8px 0 0;
+        
+} 
+
+.radio-folder:first-child + label
+{
+    margin-left: 245px;
 }
 
-.tariffs-menu li:first-child {
-    margin-left: 0;
+.radio-folder:checked + label
+{
+    background-color: #fff;
+    border-top: 2px solid #FCCA3A;
+    border-right: 2px solid #FCCA3A;
+    border-left: 2px solid #FCCA3A;
 }
 
-.capital_tariff {
+.radio-folder  + label + .tariff
+{
+    display: none;
+}
+
+.radio-folder:checked + label + .tariff
+{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    min-width: 20em;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/*capital_tariff*/
+
+.tariff {
     float: left;
     border: 2px #FCCA3A solid;
     border-radius: 9px;
@@ -520,8 +575,7 @@ h6 {
 
 .capital_finishing_rough_materials span {
     font-size: 12px;
-    font-weight: 300;
-    
+    font-weight: 300; 
 }
 
 .capital_menu_works {
@@ -539,8 +593,7 @@ h6 {
     font-weight: 300;
     margin-left: 430px;
     padding-left: 6px;
-    padding-top: 9px;
-    
+    padding-top: 9px;   
 }
 
 .capital_menu_works li::marker {
@@ -555,7 +608,6 @@ h6 {
     height: 682px;
     margin-top: 141px;
     margin-left: -4px;
-
 }
 
 .leonid {

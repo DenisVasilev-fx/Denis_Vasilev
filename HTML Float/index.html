@@ -36,9 +36,9 @@
         <div class="navigation">
             <div class="container">
                 <ul class="navigation_menu">
-                    <li>Наши награды</li>
-                    <li>Тарифы</li>
-                    <li>Калькулятор</li>
+                    <li><a href="#awardsTitle">Наши награды</a></li>
+                    <li><a href="#tariffsTitle">Тарифы</a></li>
+                    <li><a href="#calculatorTitle">Калькулятор</a></li>
                     <li>Портфолио</li>
                     <li>Отзывы</li>
                     <li>Почему мы?</li>
@@ -77,7 +77,7 @@
         </div>
     </div>
 
-    <div class="advantages ">
+    <div class="advantages" id="awardsTitle">
         <div class="container">
             <h3>Знаем все о хорошем ремонте</h3>
 
@@ -119,18 +119,15 @@
         </div>
     </div>
     </div>
-    <div class="tariffs">
+    
+    <div class="tariffs" id="tariffsTitle">
         <div class="container">
-            <h3>Тарифы</h3>
+            <h3 >Тарифы</h3>
             <p class="order_amount">Минимальная сумма заказа от 50 000 руб.</p>
-            <ul class="tariffs-menu">
-                <li>Капитальный</li>
-                <li>Стандартный</li>
-                <li>Косметический</li>
-                <li>Черновой</li>
-            </ul>
-
-            <div class="capital_tariff">
+            <div class="cards_tariffs">
+            <input type="radio" name="folder" id="folder1" checked class="radio-folder">
+            <label for="folder1">Капитальный</label>
+            <div class="tariff">
                 <div class="capital_tariff_price">
                     <p class="price">от 6 120 ₽/м² <br>
                         <span>без скидки: от <s>7 200 р./м²</s></span>
@@ -187,9 +184,193 @@
                     </ul>
                 </div>
             </div>
+
+
+            <input type="radio" name="folder" id="folder2" class="radio-folder">
+            <label for="folder2">Стандартный</label>
+            <div class="tariff">
+                <div class="capital_tariff_price">
+                    <p class="price">от 5 120 ₽/м² <br>
+                        <span>без скидки: от <s>7 200 р./м²</s></span>
+                    </p>
+                    <p class="discount_precentage">При заказе онлайн <span>скидка 15%</span> <br>
+                        Выгода <strong>1 080 ₽/м²</strong>
+                    </p>
+                    <button class="btn2">Получить смету</button>
+                    <img class="photo_room" src="img/photo_room.jpg" alt="photo_room">
+
+                    <div class="renovation_photo">
+                        <img src="img/photo-camera.svg" alt="photo-camera">
+                        <p>Фотосессия ремонта <span>бесплатно</span></p>
+                    </div>
+                </div>
+
+                <div class="capital_finishing_rough_materials">
+                    <h5>Чистовые материалы</h5>
+                    <ul>
+                        <li>Обои </li>
+                        <li>Ламинат </li>
+                        <li>Настенная и напольная плитка </li>
+                        <li>Межкомнатные двери</li>
+                    </ul>
+                    <p>
+                        от 2 470 ₽/м² <br>
+                        <span>без скидки: от <s>2 717 р./м²</s></span>
+                    </p>
+                    <h5>Черновые материалы</h5>
+                    <ul>
+                        <li>Смеси, грунтовки </li>
+                        <li>Гипсокартон, профили </li>
+                        <li>Реечный и натяжной потолок </li>
+                        <li>Медная проводка</li>
+                    </ul>
+                    <p>
+                        от 1 530 ₽/м² <br>
+                        <span>без скидки: от <s>1 683 р./м²</s></span>
+                    </p>
+                </div>
+
+                <div class="capital_menu_works">
+                    <h5>Работы, входящие в ремонт</h5>
+                    <ul class="capital_list_works">
+                        <li>Работы по стенам</li>
+                        <li>Монтаж электрики</li>
+                        <li>Монтаж сантехники</li>
+                        <li>Демонтажные работы</li>
+                        <li>Работы по полам</li>
+                        <li>Плиточные работы</li>
+                        <li>Устройство потолков</li>
+                        <li>Замена окон</li>
+                        <li>Замена дверей</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <input type="radio" name="folder" id="folder3" class="radio-folder">
+            <label for="folder3">Косметический</label>
+            <div class="tariff">
+                <div class="capital_tariff_price">
+                    <p class="price">от 4 120 ₽/м² <br>
+                        <span>без скидки: от <s>7 200 р./м²</s></span>
+                    </p>
+                    <p class="discount_precentage">При заказе онлайн <span>скидка 15%</span> <br>
+                        Выгода <strong>1 080 ₽/м²</strong>
+                    </p>
+                    <button class="btn2">Получить смету</button>
+                    <img class="photo_room" src="img/photo_room.jpg" alt="photo_room">
+
+                    <div class="renovation_photo">
+                        <img src="img/photo-camera.svg" alt="photo-camera">
+                        <p>Фотосессия ремонта <span>бесплатно</span></p>
+                    </div>
+                </div>
+
+                <div class="capital_finishing_rough_materials">
+                    <h5>Чистовые материалы</h5>
+                    <ul>
+                        <li>Обои </li>
+                        <li>Ламинат </li>
+                        <li>Настенная и напольная плитка </li>
+                        <li>Межкомнатные двери</li>
+                    </ul>
+                    <p>
+                        от 2 470 ₽/м² <br>
+                        <span>без скидки: от <s>2 717 р./м²</s></span>
+                    </p>
+                    <h5>Черновые материалы</h5>
+                    <ul>
+                        <li>Смеси, грунтовки </li>
+                        <li>Гипсокартон, профили </li>
+                        <li>Реечный и натяжной потолок </li>
+                        <li>Медная проводка</li>
+                    </ul>
+                    <p>
+                        от 1 530 ₽/м² <br>
+                        <span>без скидки: от <s>1 683 р./м²</s></span>
+                    </p>
+                </div>
+
+                <div class="capital_menu_works">
+                    <h5>Работы, входящие в ремонт</h5>
+                    <ul class="capital_list_works">
+                        <li>Работы по стенам</li>
+                        <li>Монтаж электрики</li>
+                        <li>Монтаж сантехники</li>
+                        <li>Демонтажные работы</li>
+                        <li>Работы по полам</li>
+                        <li>Плиточные работы</li>
+                        <li>Устройство потолков</li>
+                        <li>Замена окон</li>
+                        <li>Замена дверей</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <input type="radio" name="folder" id="folder4" class="radio-folder">
+            <label for="folder4">Черновой</label>
+            <div class="tariff">
+                <div class="capital_tariff_price">
+                    <p class="price">от 3 120 ₽/м² <br>
+                        <span>без скидки: от <s>7 200 р./м²</s></span>
+                    </p>
+                    <p class="discount_precentage">При заказе онлайн <span>скидка 15%</span> <br>
+                        Выгода <strong>1 080 ₽/м²</strong>
+                    </p>
+                    <button class="btn2">Получить смету</button>
+                    <img class="photo_room" src="img/photo_room.jpg" alt="photo_room">
+
+                    <div class="renovation_photo">
+                        <img src="img/photo-camera.svg" alt="photo-camera">
+                        <p>Фотосессия ремонта <span>бесплатно</span></p>
+                    </div>
+                </div>
+
+                <div class="capital_finishing_rough_materials">
+                    <h5>Чистовые материалы</h5>
+                    <ul>
+                        <li>Обои </li>
+                        <li>Ламинат </li>
+                        <li>Настенная и напольная плитка </li>
+                        <li>Межкомнатные двери</li>
+                    </ul>
+                    <p>
+                        от 2 470 ₽/м² <br>
+                        <span>без скидки: от <s>2 717 р./м²</s></span>
+                    </p>
+                    <h5>Черновые материалы</h5>
+                    <ul>
+                        <li>Смеси, грунтовки </li>
+                        <li>Гипсокартон, профили </li>
+                        <li>Реечный и натяжной потолок </li>
+                        <li>Медная проводка</li>
+                    </ul>
+                    <p>
+                        от 1 530 ₽/м² <br>
+                        <span>без скидки: от <s>1 683 р./м²</s></span>
+                    </p>
+                </div>
+
+                <div class="capital_menu_works">
+                    <h5>Работы, входящие в ремонт</h5>
+                    <ul class="capital_list_works">
+                        <li>Работы по стенам</li>
+                        <li>Монтаж электрики</li>
+                        <li>Монтаж сантехники</li>
+                        <li>Демонтажные работы</li>
+                        <li>Работы по полам</li>
+                        <li>Плиточные работы</li>
+                        <li>Устройство потолков</li>
+                        <li>Замена окон</li>
+                        <li>Замена дверей</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
-    <div class="calculator">
+    <div class="calculator" id="calculatorTitle">
         <div class="container">
             <img src="img/leonid_photo.png" alt="leonid_photo">
             <div class="calculator_price">
