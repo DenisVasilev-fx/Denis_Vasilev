@@ -451,12 +451,8 @@ h6 {
     position: absolute;
     left: 0;
     top: 49px;
-    min-width: 20em;
-    background-color: #fff;
-    border-radius: 10px;
-}
 
-/*capital_tariff*/
+}
 
 .tariff {
     float: left;
@@ -467,6 +463,9 @@ h6 {
     background-color: #fff;
     width: 1046px;
 }
+
+/*capital_tariff*/
+
 
 .capital_tariff_price {
     float: left;
