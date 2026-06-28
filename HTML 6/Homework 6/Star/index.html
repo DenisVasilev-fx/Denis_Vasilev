@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .rating-star {
+        margin-top: 10%;
+        margin-right: 40%;
+    }
+    
+    input {
+        display: none;
+    }
+
+    .rating-star label {
+        float: right;
+        width: 77px;
+        height: 80px;
+        background: url('img/star0.png') no-repeat;
+        background-size: contain;
+    }
+
+    .rating-star label:hover,
+     .rating-star label:hover ~ label{
+        float: right;
+        width: 77px;
+        height: 80px;
+        background: url('img/star1.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+
+    .rating-star input:checked ~ label {
+        float: right;
+        width: 77px;
+        height: 80px;
+        background: url('img/star1.png') no-repeat;
+        background-size: contain;
+    }
+   
+</style>
+
+<body>
+
+<div class="rating-star">
+    <input type="radio" id="star-1" name="rating" value="1">
+	<label for="star-1" title="Оценка «1»"></label>
+    <input type="radio" id="star-2" name="rating" value="2">
+	<label for="star-2" title="Оценка «2»"></label>
+    <input type="radio" id="star-3" name="rating" value="3">
+	<label for="star-3" title="Оценка «3»"></label>
+    <input type="radio" id="star-4" name="rating" value="4">
+	<label for="star-4" title="Оценка «4»"></label>
+	<input type="radio" id="star-5" name="rating" value="5">
+	<label for="star-5" title="Оценка «5»"></label>	
+</div>
+
+</body>
+
+</html>

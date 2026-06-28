@@ -6,10 +6,6 @@
     scroll-behavior: smooth;
 }
 
-body {
-    width: 1920px;
-}
-
 .container {
     overflow: hidden;
     width: 1201px;
@@ -93,6 +89,7 @@ h6 {
 
 .header_navigation_main {
     background: url("../img/heder_main_background.jpg") no-repeat;
+    background-size: cover;
 }
 
 .logo {
