@@ -1,0 +1,22 @@
+@media all and (max-width: 600px) {
+    .sports {
+        float: none;
+        margin-right: 0px;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .sports h3 {
+        margin-top: 28px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .sports ul {
+        width: auto;
+    }
+}

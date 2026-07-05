@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+        <p class="title">Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+        <label for="article" class="title_article">Название статьи:</label>
+        <input type="text" name="article"><br>
+        <label for="" class="title_categories">Рубрика:</label>
+        <select name="categories">
+            <option value="programming" selected>программирование</option>
+            <option value="graphics">графика и дизайн</option>
+            <option value="computer_equipment">компьютерная техника</option>
+        </select><br>
+        <label for="" class="title_publication">Публикация:</label>
+        <input type="radio" name="publication" value="site" class="radio_pub"> <span>на сайте</span>
+        <input type="radio" name="publication" value="magazine" class="radio_pub" checked> <span>в журнале</span> 
+        <input type="radio" name="publication" value="site_magazine" class="radio_pub"> <span>на сайте и в журнале</span> <br>
+        <label for="">Разрешить комментарии:</label>
+        <input type="checkbox" name="comments" value="yes" class="checkbox_comments" checked> <br>
+        <label for="">Текст статьи:</label><br>
+        <textarea name="text_of_the_article"></textarea><br>
+        <input type="submit" value="Опубликовать" class="btn">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

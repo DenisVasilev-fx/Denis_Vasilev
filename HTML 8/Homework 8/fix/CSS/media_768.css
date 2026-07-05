@@ -1,0 +1,33 @@
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .sports {
+        font-size: 20px;
+        height: 860px;
+        width: 220px;
+        padding: 0px 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .description {
+        font-size: 20px;
+    }
+
+    .description img {
+        float: none;
+        display: block;
+        margin: auto;
+        padding-right: 0px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    h2 {
+        font-size: 25px;
+    }
+}

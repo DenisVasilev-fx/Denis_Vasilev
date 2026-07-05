@@ -1,0 +1,83 @@
+
+.title {
+    margin: 5px 0 15px;
+}
+
+.title_article {
+    margin-right: 57px;
+}
+
+.title_article+input {
+    width: 415px;
+    margin-bottom: 3px;
+}
+
+@media all and (max-width: 650px) {
+    .title_article+input {
+    width: 305px;
+    margin-bottom: 3px;
+}
+}
+
+
+.title_categories {
+    margin-right: 112px;
+}
+
+.title_categories+select {
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media all and (max-width: 537px) {
+    .title_categories+select {
+    width: 313px;
+    }
+}
+
+
+.title_publication {
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+
+
+.radio_pub+span {
+    vertical-align: 2px;
+}
+
+@media all and (max-width: 650px) {
+    .radio_pub {
+        display: block;
+        position: relative;
+        top: 13px;
+    }
+
+    .radio_pub+span {
+        display: block;
+        position: relative;
+        top: -4px;
+        left: 24px;
+        vertical-align: 0px;
+        margin-bottom: -10px;
+    
+    } 
+
+}
+
+.checkbox_comments {
+    vertical-align: -3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 98%;
+}
+
+.btn {
+    margin-top: 10px;
+}
