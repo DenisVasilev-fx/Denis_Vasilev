@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var surname = prompt('Введите фамилию:');
+        var firstName = prompt('Введите имя:');
+        var patronymic = prompt('Введите отчество:');
+        var age = prompt('Введите возраст, лет:');
+        var gender = confirm('Ваш пол мужской?');
+
+        alert('ваше ФИО: ' + surname + firstName + patronymic);
+        alert('ваш возраст в годах: ' + Number(age));
+        alert('ваш возраст в днях: ' + (Number(age) * 365));
+        alert('через 5 лет вам будет: ' + (Number(age) + 5));
+
+        gender==true ? alert('Ваш пол: мужской') : alert('Ваш пол: женский');
+        age<60 ? alert('Вы на пенсии: нет') : alert('Вы на пенсии: да')
+    </script>
+
+</body>
+
+</html>
