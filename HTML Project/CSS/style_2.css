@@ -1,0 +1,314 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+    
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h5, h6 {
+    font-family: "Playfair Display", serif;
+    line-height: 0.9;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 71px;
+    letter-spacing: -1.42px;
+}
+
+h2, h3 {
+    font-size: 85px;
+    letter-spacing: -1.7px;
+}
+
+h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 62px;
+    letter-spacing: -1.24px;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.background_1 {
+    background-color: rgb(25, 25, 25);
+    background-size: cover;
+
+}
+
+.background_2 {
+    background-color: #101010;
+    background-size: cover;
+
+}
+
+            /* header */
+
+.header {
+    background: url(../img/BGheader_2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1211px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header__inner  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 48px;
+    padding-bottom: 70px;
+}
+
+
+/*.header__inner  {
+    display: grid;
+    grid-template-columns: 703px 1fr 132px;
+    grid-template-rows: 81px 81px;
+}
+.language_header  {
+    grid-column: 1;
+    grid-row: 2;
+}*/
+
+
+.company_information li{
+    display: inline-block;
+    padding-bottom: 32px;
+}
+
+.company_information__list img {
+    padding-right: 8px;
+    vertical-align: -5px;
+}
+
+.company_information__list li:nth-child(2) {
+    padding-right: 15px;
+}
+
+.company_information__list li:nth-child(3) {
+    height: 32px;
+    border-left: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    padding: 3px 6px 0px 49px;
+    background: url(../img/Exclude.svg) no-repeat 24px center;
+}
+
+.company_information__list li:nth-child(4) {
+    height: 32px;
+    background: url(../img/Phone.svg)no-repeat 5px 5px;
+    padding-top: 4px;
+    padding-left: 30px;
+}
+
+.company_information a:nth-child(2) {
+    color: #ffffff99;
+    font-size: 12px;
+    padding-right: 16px;
+    background: url(../img/Vector_right.svg) no-repeat 110px 5px;
+}
+
+.company_information a:nth-child(3) {
+    color: #fff;
+    font-size: 12px;
+    
+}
+
+.language_header {
+    display: flex;
+    gap: 29px;
+}
+
+.language_header__list {
+    display: flex;
+    gap: 10px;
+}
+
+.language_header__list li {
+    font-size: 12px;
+    padding: 0 2px;
+}
+
+.language_header__list li:hover{
+    border-bottom: 1px #fff solid;
+    cursor: pointer;
+}
+
+            /*main*/
+
+.main h2 {
+    max-width: 1000px;
+
+}
+
+.main p {
+    max-width: 473px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.main button {
+    color: #BE7E00;
+    padding: 16px;
+    margin-bottom: 224px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+            /* quote_forbes_block */
+
+.quote_forbes_block {
+    background: url(../img/Quote_forbes_mask.png) no-repeat;
+    background-size: cover;
+    background-color: rgb(25, 25, 25);
+}
+
+.quote_forbes_content {
+    height: 526px;
+}
+
+.quote_forbes_content_inner {
+    position: relative;
+    top: -126px;
+    max-width: 1189px;
+    margin-left: 1px;
+    margin-bottom: 134px;
+    min-height: 758px;
+    background: url(../img/Letter\ A_2.png)no-repeat;
+    background-size: cover;
+    background-color: #FFFBF2;
+}
+
+.quote_forbes_content_inner h5 {
+    text-align: center;
+    padding: 295px 45px 38px;
+    color: #101010;
+    background: url(../img/Сircuit\ Azur\ Life_2.svg) no-repeat 1040px 260px;
+} 
+
+.quote_forbes_content_inner p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 600;
+    padding-bottom: 233px;
+    color: #1D1717;
+}
+
+            /* specialists_Azur-Life  */
+
+.specialists_Azur-Life {
+    background: url(../img/Letter\ &_2.png) no-repeat 59% 72%;
+    background-size: 980px;
+    background-color: #101010;
+}
+
+.specialists_Azur-Life_content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.specialists_Azur-Life h3 {
+    width: 538px;
+    margin-right: 45px;
+    padding-top: 273px;
+    
+}
+
+.specialist__Eva {
+    position: relative;
+    width: 390px;
+    height: 585px;
+    margin-top: 130px;
+    margin-right: -25px;
+    margin-left: 218px;
+    margin-bottom: 238px;
+    background: url(../img/Eva_background.png), url(../img/Eva.jpg) no-repeat;
+    background-size: cover, cover;
+    
+}
+
+.specialist__Eva p {
+    text-align: right;
+    
+}
+
+.specialist__Eva p:first-child {
+    padding-right: 222px;
+    margin-top: 355px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2; 
+}
+
+.specialist__Eva p:nth-child(2) { 
+    padding-right: 222px; 
+}
+
+.specialist__Eva p:nth-child(3) {
+    position: absolute;
+    right: 225px;
+    width: 350px;
+    padding-top: 29px;  
+}
+
+.specialist__Natalia {
+    margin-top: -110px;
+    margin-bottom: 342px;
+    width: 488px;
+    height: 721px;
+    background:url(../img/Natalia_background.png), url(../img/Natalia_photo.jpg)  no-repeat;
+    background-size: cover, cover;
+}
+
+.specialist__Natalia p {
+    margin-left: 215px;
+}
+
+.specialist__Natalia p:first-child {
+    margin-top: 595px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;  
+}
+
+.specialist__Natalia p:nth-child(3) {
+    padding-top: 30px;
+    width: 310px;
+}
+
+
