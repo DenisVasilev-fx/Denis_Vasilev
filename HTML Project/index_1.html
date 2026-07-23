@@ -127,7 +127,7 @@
         </div>
 
 
-        <div class="available_objects-photo_list owl-carousel">
+        <div class="available_objects-photo_list owl-carousel" id="carousel1">
 
             <div class="available_objects-photo_item-1">
                 <img src="img/Selected Icon.svg" alt="Selected">
@@ -246,7 +246,8 @@
                 <h3>блог</h3>
                 <img src="img/Сircuit Azur Life.svg" alt="">
             </div>
-            <div class="blog_home-photo_list">
+        </div>
+            <div class="blog_home-photo_list owl-carousel" id="carousel2"">
                 <div class="blog_home-photo_item-1">
                     <img src="img/Cannes_France-photo.jpg" alt="Cannes France">
                     <a href="#">Подробнее</a>
@@ -272,7 +273,7 @@
                         Английской набережной.</p>
                 </div>
             </div>
-        </div>
+        
     </div>
     <div class="feedback_block">
         <div class="feedback_block_mask">
@@ -345,16 +346,18 @@
     <script src="JS/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $("#carousel1").owlCarousel({
                 loop:true,
                 items: 2,
                 margin:10,
                 center:true,
             });
-
-
-
-
+            $("#carousel2").owlCarousel({
+                loop:true,
+                items: 2,
+                margin:10,
+                center:true,
+            });
         });
     </script>
     <script>
