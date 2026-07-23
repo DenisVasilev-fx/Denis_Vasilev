@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style_5.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="company_information">
+                <ul class="company_information__list">
+                    <li><img src="img/Logo.svg" alt="Azur Life"></li>
+                    <li>Azur Life</li>
+                    <li>Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер</li>
+                    <li>+33 4 93 16 06 31</li>
+                </ul>
+                <a href="index_1.html">Главная страницы</a><a href="#">Объекты в аренду</a>
+            </div>
+            <div class="language_header">
+                <ul class="language_header__list">
+                    <li>en</li>
+                    <li>fr</li>
+                    <li>ru</li>
+                    <li>it</li>
+                </ul>
+                <div class="header__menu">
+                    <input type="button" id="burger-btn" class="burger-btn" onclick="openHandler()">
+                    <label for="burger-btn" class="burger"></label>
+                    <div class="shadow"></div>
+                    <div class="menu_nav">
+                        <div class="language_menu_nav">
+                            <ul class="language_menu_nav__list">
+                                <li>en</li>
+                                <li>fr</li>
+                                <li>ru</li>
+                                <li>it</li>
+                            </ul>
+                            <input type="button" id="close-btn" class="close-btn" onclick="closeHandler()">
+                            <label for="close-btn" class="close"></label>
+                        </div>
+                        <ul class="menu-list_nav">
+                            <li><a href="Index_2.html">О нас</a></li>
+                            <li><a href="index_3.html">Все объекты</a></li>
+                            <li><a href="Index_4.html">Продажа</a></li>
+                            <li><a href="index_5.html">Аренда</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Купить, продать, арендовать с нами</a></li>
+                            <li><a href="#">Экспертная оценка</a></li>
+                            <li><a href="#">Презентация</a></li>
+                            <li><a href="#">Управление недвижимостью</a></li>
+                            <li><a href="#">Консьерж-сервис</a></li>
+                            <li><a href="#">Связаться с нами</a></li>
+                        </ul>
+                        <div class="privacy_policy">
+                            <a href="#">Наша комиссия</a>
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <div class="container">
+                <h3>Аренда <br>на Лазурном берегу</h3>
+                <p>
+                    Арендовать недвижимость на сезон или выбрать что-то на долгосрочный период можно легко. <br>Azur
+                    Life предоставляет опцию полного сопровождения сделки аренды. Мы выберем премиальные виллы и
+                    апартаменты под Ваш запрос без комиссии и дополнительных наценок.
+                </p>
+            </div>
+        </main>
+    </header>
+    <div class="real_estate_filter_block BG_Grey">
+        <div class="container real_estate_filter_inner">
+                <h3>Объекты в аренду</h3>
+            <ul class="real_estate_filter_list">
+                <li>Апартаменты</li>
+                <li>Ницца, Франция</li>
+                <li>Сортировать по</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cannes_france_1_block BG_Grey">
+        <div class="container_w1315 BG_Black">
+            <div class="container cannes_france_1_inner">
+                <div class="cannes_france_1-photo">
+                    <img src="img/Page_5/Selected Icon.svg" alt="Selected">
+                    <p>Канны, Франция</p>
+                    <img src="img/Page_5/Cannes_France-photo_5_1.jpg" alt="Cannes France">
+                    <h4>Апартаменты с видом на море на Английской набережной</h4>
+                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                        знаменитой
+                        Английской набережной.</p>
+                </div>
+                <div class="cannes_france_1_description">
+                    <h4>Апартаменты с видом на море на Английской набережной</h4>
+                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                        знаменитой Английской набережной.</p>
+                    <p>104.73 м²</p>
+                    <p>1 000 000 &euro;</p>
+                    <p>Выбор <br>Azur Life</p>
+                    <button>Смотреть объект</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nice_france_1_block BG_Grey">
+        <div class="container nice_france_1_inner">
+            <div class="nice_france_1-photo">
+                <img src="img/Page_5/Exclude_icon_A_1.svg" alt="Selected">
+                <p>Ницца, Франция</p>
+                <img src="img/Page_5/Nice_France-photo_5_1.jpg" alt="Nice France">
+                <h4>Апартаменты с видом на море на Английской набережной</h4>
+                <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                    знаменитой Английской набережной.</p>
+            </div>
+            <div class="nice_france_1_description">
+                <h4>Апартаменты с видом на море на Английской набережной</h4>
+                <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                    знаменитой Английской набережной.</p>
+                <p>1 600 000 &euro;</p>
+                <p>104.73 м²</p>
+                <p>Выбор <br>Azur Life</p>
+                <button>Смотреть объект</button>
+            </div>
+        </div>
+    </div>
+    <div class="cannes_france_2_block BG_Grey">
+        <div class="container_w1315 BG_Black">
+            <div class="container cannes_france_2_inner">
+                <div class="cannes_france_2-photo">
+                    <p>Канны, Франция</p>
+                    <img src="img/Page_5/Cannes_France-photo_5_2.jpg" alt="Cannes France">
+                    <h4>Апартаменты с видом на море на Английской набережной</h4>
+                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                        знаменитой
+                        Английской набережной.</p>
+                </div>
+                <div class="cannes_france_2_description">
+                    <h4>Апартаменты с видом на море на Английской набережной</h4>
+                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                        знаменитой Английской набережной.</p>
+                    <p>1 000 000 &euro;</p>
+                    <p>104.73 м²</p>
+                    <button>Смотреть объект</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nice_france_2_block BG_Grey">
+        <div class="container nice_france_2_inner">
+            <div class="nice_france_2_top">
+                <div class="nice_france_2-photo">
+                    <p>Ницца, Франция</p>
+                    <img src="img/Page_5/Nice_France-photo_5_2.jpg" alt="Nice France">
+                    <h4>Апартаменты с видом на море на Английской набережной</h4>
+                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                        знаменитой Английской набережной.</p>
+                </div>
+                <div class="nice_france_2_description">
+                    <h4>Апартаменты с видом на море на Английской набережной</h4>
+                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на
+                        знаменитой Английской набережной.</p>
+                    <p>1 600 000 &euro;</p>
+                    <p>104.73 м²</p>
+                    <p>Выбор <br>Azur Life</p>
+                    <button>Смотреть объект</button>
+                </div>
+            </div>
+            <div class="nice_france_2_inner_bottom">
+                <a href="index_3.html">Все объекты</a>
+                <a href="Index_4.html">Объекты на продажу</a>
+            </div>
+            <div class="vector_horizont">
+                <img src="img/Vector_horizont_left.svg" alt="">
+                <img src="img/Vector_horizont_right.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer BG_Grey">
+        <div class="footer_mask">
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_feedback">
+                        <form action="">
+                            <label>Перезвоните мне</label><br>
+                            <input type="text" placeholder="Имя"> <br>
+                            <input type="tel" placeholder="Телефон"> <br>
+                            <input type="email" placeholder="Email"> <br>
+                            <input type="submit" value="Отправить запрос">
+                        </form>
+                        <a href="https://www.instagram.com"><img src="img/Instagram_icon.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com"><img src="img/Facebook_icon.svg" alt="Facebook"></a>
+                        <p>+33 4 93 16 06 31</p>
+                        <p>contact@azur-life.com</p>
+                        <p>Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер</p>
+                    </div>
+                    <div class="footer_nav_menu">
+                        <ul>
+                            <li>Навигация</li>
+                            <li><a href="Index_2.html">О нас</a></li>
+                            <li><a href="index_3.html">Все объекты</a></li>
+                            <li><a href="Index_4.html">Продажа</a></li>
+                            <li><a href="index_5.html">Аренда</a></li>
+                            <li><a href="#">Купить, продать, арендовать с нами</a></li>
+                            <li><a href="#">Презентация</a></li>
+                            <li><a href="#">Экспертная оценка</a></li>
+                            <li><a href="#">Управление недвижимостью</a></li>
+                            <li><a href="#">Консьерж-сервис</a></li>
+                            <li><a href="#">Наша комиссия</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                        <ul>
+                            <li>Регионы</li>
+                            <li><a href="#">Апартаменты в Больё-сюр-Мер</a></li>
+                            <li><a href="#">Вилла в Больё-сюр-Мер</a></li>
+                            <li><a href="#">Вилла в Эзе</a></li>
+                            <li><a href="#">Вилла в Сен-Жан-Кап- <br> Ферра</a></li>
+                            <li><a href="#">Апартаменты в Эзе</a></li>
+                            <li><a href="#">Апартаменты в Сен-Жан-Кап-Ферра</a></li>
+                            <li><a href="#">Design by IDEAS.AGENCY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous"></script>
+    <script>
+        var menu = document.querySelector('.menu_nav');
+        var shadow = document.querySelector('.shadow');
+
+        function openHandler() {
+            menu.style.right = 0;
+            shadow.className += ' visible';
+            shadow.style.left = 0;
+            shadow.style.top = 0;
+        }
+
+        function closeHandler() {
+            menu.style.right = -525 + 'px';
+            shadow.className = 'shadow';
+            shadow.style.left = '100vw';
+
+        }
+
+    </script>
+
+
+
+
+</body>
+
+</html>

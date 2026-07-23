@@ -13,6 +13,9 @@
 *::before {
     box-sizing: inherit;
 }
+body {
+    overflow-x: hidden;
+}
 
 h1, h2, h3, h5, h6 {
     font-family: "Playfair Display", serif;
@@ -43,19 +46,20 @@ a {
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
+    
 }
 
 ul {
     list-style-type: none;
 }
 
-.background_1 {
+.BG_Grey {
     background-color: rgb(25, 25, 25);
     background-size: cover;
 
 }
 
-.background_2 {
+.BG_Black {
     background-color: #101010;
     background-size: cover;
 
@@ -87,6 +91,13 @@ ul {
     display: inline-block;
 }
 
+.company_information__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
 .company_information__list img {
     padding-right: 8px;
     vertical-align: -5px;
@@ -97,7 +108,6 @@ ul {
 }
 
 .company_information__list li:nth-child(3) {
-    height: 32px;
     border-left: 1px solid #ffffff80;
     border-right: 1px solid #ffffff80;
     padding: 3px 6px 0px 49px;
@@ -109,11 +119,15 @@ ul {
     background: url(../img/Phone.svg)no-repeat 5px 5px;
     padding-top: 4px;
     padding-left: 30px;
+    padding-right: 20px;
 }
 
 .language_header {
     display: flex;
     gap: 29px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .language_header__list {
@@ -124,12 +138,146 @@ ul {
 .language_header__list li {
     font-size: 12px;
     padding: 0 2px;
+    border-bottom: 1px #ffffff00 solid;
 }
 
 .language_header__list li:hover{
     border-bottom: 1px #fff solid;
     cursor: pointer;
 }
+
+
+
+            /*  burger */
+
+
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  display: block;
+  width: 16px;
+  height: 15px;  
+  background: url(../img/Menu.svg) no-repeat 0px 0px;
+  cursor: pointer;
+  
+}
+
+            /*  shadow */
+
+.shadow  {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 3;
+    left: 100vw;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+}
+
+
+            /*  menu_nav */
+
+
+.menu_nav {
+  top: 0;
+  right: -525px;
+  position: fixed;
+  z-index: 4;
+  padding-top: 49px;
+  padding-left: 71px;
+  padding-right: 65px;
+  background-color: #1A1A1A;
+  transition: .5s;
+  width: 525px;
+  height: 101%;
+}
+
+.language_menu_nav {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+    margin-right: 60px;
+}
+
+.language_menu_nav__list {
+    display: flex;
+    gap: 10px;
+}
+
+.language_menu_nav__list li {
+    font-size: 12px;
+    padding: 0 2px;
+    border-bottom: 1px #ffffff00 solid;
+}
+
+.language_menu_nav__list li:hover{
+    border-bottom: 1px #fff solid;
+    cursor: pointer;
+}
+
+.close-btn {
+  display: none;
+}
+
+.close {
+  display: block;
+  width: 17px;
+  height: 17px;  
+  background: url(../img/Close-icon.svg) no-repeat 0px 0px;
+  cursor: pointer; 
+}
+
+.menu-list_nav li {
+  width: 525px;
+  padding-bottom: 25px;
+  color: #656565;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  text-decoration: none;
+}
+
+.menu-list_nav li:nth-child(8) {
+  padding-bottom: 58px;
+}
+
+.menu-list_nav li:nth-child(9) {
+  padding-bottom: 0px;
+}
+
+.menu-list_nav li:nth-child(10) {
+  padding-bottom: 102px;
+}
+
+.menu-list_nav li:nth-child(11) {
+    padding-bottom: 79px;
+}
+
+.menu-list_nav li:hover {
+    color: #fff;
+    list-style-type: disc;
+}
+
+.privacy_policy {
+    display: flex;
+    gap: 52px;
+}
+
+.privacy_policy a {
+    line-height: 1.62;
+    color: #656565;
+}
+
 
             /*main*/
 
@@ -173,7 +321,8 @@ ul {
 
             /* azur_life */
 
-.agency-azur_life {
+
+.agency {
     position: relative;
 }
 
@@ -181,10 +330,6 @@ ul {
     width: 544px;
     padding-top: 144px;
     padding-bottom: 17px;
-}
-
-.agency {
-    position: relative;
 }
 
 .agency a {
@@ -244,35 +389,52 @@ ul {
 
 }
 
+@media all and (max-width: 980px) {
+    .agency button {
+    margin-bottom: 890px;
+
+}
+}
+
+
+.natalia {
+    position: relative;
+    
+}
+
 .natalia img:first-child {
     position: absolute;
     z-index: 1;
-    top: 52px;
-    right: 10px;
+    bottom: 66px;
+    right: 0;
     width: 490px;
     height: 721px;
 }
 
 .natalia img:nth-child(2) {
     position: absolute;
-    top: -102px;
-    right: -164px;
+    bottom: -76px;
+    right: -170px;
     width: 915px;
     height: 1013px;
 }
 
-.natalia_initials {
+.natalia p:nth-child(3) {
     position: absolute;
     right: 247px;
-    bottom: 110px;
+    bottom: 133px;
     z-index: 2;
-}
-
-.natalia_initials p:first-child {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 6px;
+}
+
+.natalia p:nth-child(4) {
+    position: absolute;
+    bottom: 103px;
+    right: 300px;
+    z-index: 2;
+    
 
 }
 
@@ -297,13 +459,13 @@ ul {
 
             /* available_objects-photo_list */
 
-.available_objects-photo_list {
+/*.available_objects-photo_list {
     display: flex;
     display: flex;
     justify-content: center;
     gap: 70px;
     flex-wrap: wrap;
-}
+}*/
 
             /* available_objects-photo_item-1 */
 
@@ -499,7 +661,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
+}
+
+
+@media all and (max-width: 1077px) {
+    .office_Azur_Life_content {
+    flex-direction: column-reverse;
+    
+}
 }
 
 .office_Azur_Life_left h3 {
@@ -557,7 +728,15 @@ ul {
 .property_management_content {
     display: flex;
     gap: 63px;
+    flex-wrap: wrap;
 }
+
+@media all and (max-width: 1158px) {
+    .property_management_content {
+    justify-content: center;
+}
+}
+
             /* property_management_left */
 
 .property_management_left {
@@ -594,6 +773,14 @@ ul {
     padding-bottom: 43px;
 }
 
+@media all and (max-width: 1158px) {
+    .concierge_service_right h3 {
+    padding-top: 0px;
+}
+}
+
+
+
 .concierge_service_right a {
     position: absolute;
     right: -51px;
@@ -628,10 +815,20 @@ ul {
 
 }
 
+@media all and (max-width: 980px) {
+    .advantages_Azur_Life_inner img:nth-child(2) {
+    display: none;
+
+}
+}
+
+
+
 .advantages_Azur_Life_content {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .advantages_Azur_Life_item_1 {
@@ -691,6 +888,13 @@ ul {
     padding-bottom: 122px;
 
 }
+
+.advantages_Azur_Life_item_3 p {
+    padding-bottom: 120px;
+
+}
+
+
 
             /* blog_home */
 
@@ -978,7 +1182,7 @@ ul {
     background: url(../img/Arrow.svg) no-repeat 62px 11px;
 }
 
-/* footer */
+            /* footer */
 
 .footer_mask {
     background: url(../img/Footer_mask.png) no-repeat;
@@ -990,6 +1194,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .footer_feedback {

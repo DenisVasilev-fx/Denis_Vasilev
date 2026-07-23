@@ -1,0 +1,1096 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+    
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h5, h6 {
+    font-family: "Playfair Display", serif;
+    line-height: 0.9;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 71px;
+    letter-spacing: -1.42px;
+}
+
+h2, h3 {
+    font-size: 85px;
+    letter-spacing: -1.7px;
+}
+
+h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 62px;
+    letter-spacing: -1.24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.BG_Grey {
+    background-color: rgb(25, 25, 25);
+
+}
+
+.BG_Black {
+    background-color: #101010;
+    background-size: cover;
+
+}
+
+.container_w1315 {
+    max-width: 1335px;
+    height: 576px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1211px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+            /* header */
+
+
+.header {
+    background: url(../img/Page_5/BGheader_5.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header__inner  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 48px;
+    padding-bottom: 126px;
+}
+
+.company_information li{
+    display: inline-block;
+    padding-bottom: 32px;
+}
+
+.company_information__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    }
+
+.company_information__list img {
+    padding-right: 8px;
+    vertical-align: -5px;
+}
+
+.company_information__list li:nth-child(2) {
+    padding-right: 15px;
+}
+
+.company_information__list li:nth-child(3) {
+    border-left: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    padding: 3px 6px 0px 49px;
+    background: url(../img/Exclude.svg) no-repeat 24px center;
+}
+
+.company_information__list li:nth-child(4) {
+    height: 32px;
+    background: url(../img/Phone.svg)no-repeat 5px 5px;
+    padding-top: 4px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.company_information a:nth-child(2) {
+    color: #ffffff99;
+    font-size: 12px;
+    padding-right: 16px;
+    background: url(../img/Vector_right.svg) no-repeat 110px 5px;
+}
+
+.company_information a:nth-child(3) {
+    color: #fff;
+    font-size: 12px;
+    
+}
+
+.language_header {
+    display: flex;
+    gap: 29px;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.language_header__list {
+    display: flex;
+    gap: 10px;
+}
+
+.language_header__list li {
+    font-size: 12px;
+    padding: 0 2px;
+    border-bottom: 1px #ffffff00 solid;
+}
+
+.language_header__list li:hover{
+    border-bottom: 1px #fff solid;
+    cursor: pointer;
+}
+
+            /*  burger */
+
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  display: block;
+  width: 16px;
+  height: 15px;  
+  background: url(../img/Menu.svg) no-repeat 0px 0px;
+  cursor: pointer;
+  
+}
+
+            /*  shadow */
+
+.shadow  {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 3;
+    left: 100vw;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+}
+
+            /*  menu_nav */
+
+.menu_nav {
+  top: 0;
+  right: -525px;
+  position: fixed;
+  z-index: 4;
+  padding-top: 49px;
+  padding-left: 71px;
+  padding-right: 65px;
+  background-color: #1A1A1A;
+  transition: .5s;
+  width: 525px;
+  height: 101%;
+}
+
+.language_menu_nav {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 120px;
+    margin-right: 60px;
+}
+
+.language_menu_nav__list {
+    display: flex;
+    gap: 10px;
+}
+
+.language_menu_nav__list li {
+    font-size: 12px;
+    padding: 0 2px;
+    border-bottom: 1px #ffffff00 solid;
+}
+
+.language_menu_nav__list li:hover{
+    border-bottom: 1px #fff solid;
+    cursor: pointer;
+}
+
+.close-btn {
+  display: none;
+}
+
+.close {
+  display: block;
+  width: 17px;
+  height: 17px;  
+  background: url(../img/Close-icon.svg) no-repeat 0px 0px;
+  cursor: pointer; 
+}
+
+.menu-list_nav li {
+  width: 525px;
+  padding-bottom: 25px;
+  color: #656565;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  text-decoration: none;
+}
+
+.menu-list_nav li:nth-child(8) {
+  padding-bottom: 58px;
+}
+
+.menu-list_nav li:nth-child(9) {
+  padding-bottom: 0px;
+}
+
+.menu-list_nav li:nth-child(10) {
+  padding-bottom: 102px;
+}
+
+.menu-list_nav li:nth-child(11) {
+    padding-bottom: 79px;
+}
+
+.menu-list_nav li:hover {
+    color: #fff;
+    list-style-type: disc;
+}
+
+.privacy_policy {
+    display: flex;
+    gap: 52px;
+}
+
+.privacy_policy a {
+    line-height: 1.62;
+    color: #656565;
+}
+
+            /*main*/
+
+.main {
+    background: url(../img/Page_5/BGmain_5.png) no-repeat 0 154px;
+    background-size: cover;
+}
+
+.main h3 {
+    max-width: 495px;
+    padding-top: 35px;
+    background: url(../img/Page_5/Сircuit\ Azur\ Life.svg) no-repeat 233px 2px;
+
+}
+
+.main p {
+    max-width: 370px;
+    padding-top: 45px;
+    padding-bottom: 337px;
+}
+
+
+            /* real_estate_filter_block */
+
+.real_estate_filter_inner {
+    display: flex;
+    gap: 54px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 106px;
+    padding-bottom: 178px;
+}
+
+@media all and (max-width: 1210px) {
+.real_estate_filter_inner h3 {
+    width: 430px;
+
+}
+}
+
+@media all and (max-width: 934px) {
+.real_estate_filter_inner h3 {
+    width: 330px;
+
+}
+}
+
+.real_estate_filter_list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;  
+}
+
+
+.real_estate_filter_list li {
+    padding-right: 21px; 
+}
+
+.real_estate_filter_list li:first-child {
+    background: url(../img/Page_4/Vector_filter.svg) no-repeat 106px 10px;
+     
+}
+
+.real_estate_filter_list li:nth-child(2) {
+    background: url(../img/Page_4/Vector_filter.svg) no-repeat 124px 10px;
+     
+}
+
+.real_estate_filter_list li:nth-child(3) {
+    background: url(../img/Page_4/Vector_filter.svg) no-repeat 124px 10px;
+     
+}
+
+            /* cannes_france_1_block */
+
+
+.cannes_france_1_inner {
+    display: flex;
+    gap: 69px;
+    flex-wrap: wrap;
+}
+
+
+@media all and (max-width: 1230px) {
+    .cannes_france_1_inner {
+    justify-content: center;
+}
+}
+
+
+
+
+.cannes_france_1-photo {
+    position: relative;
+    top: -46px;
+    width: 700px;
+    height: 700px;
+} 
+
+
+.cannes_france_1-photo img:first-child {
+    position: absolute;
+    top: -16px;
+    right: 31px;
+    z-index: 1;
+    
+}
+
+.cannes_france_1-photo p:nth-child(2) {
+    position: absolute;
+    top: 53px;
+    left: 53px;
+    z-index: 1;
+
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 23px;
+    background: url(../img/Exclude_icon-photo.svg) no-repeat 1px center;
+}
+
+.cannes_france_1-photo img:nth-child(3) {
+    width: 700px;
+    height: 700px;
+}
+
+.cannes_france_1-photo p:nth-child(4) {
+    position: absolute;
+    left: 48px;
+    bottom: 250px;
+    width: 82px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.51;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background-color: #FFF9EC;
+    color: #BE7E00;
+}
+
+.cannes_france_1-photo h4 {
+    position: absolute;
+    left: 48px;
+    bottom: 153px;
+    width: 310px;
+    height: 48px;
+}
+
+.cannes_france_1-photo p:nth-child(5) {
+    position: absolute;
+    left: 48px;
+    bottom: 68px;
+    width: 330px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 1.51;
+}
+
+.cannes_france_1_description h4 {
+    width: 296px;
+    margin-right: 126px;
+    padding-top: 60px;
+    padding-bottom: 36px;
+}
+
+.cannes_france_1_description p:nth-child(2) {
+    width: 341px;
+    padding-bottom: 26px;
+    font-size: 12px;
+    
+}
+
+.cannes_france_1_description p:nth-child(3) {
+    font-size: 14px;
+    padding-bottom: 107px;
+    
+}
+
+.cannes_france_1_description p:nth-child(4) {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 103px;
+    
+}
+
+.cannes_france_1_description p:nth-child(5) {
+    font-size: 14px;
+    line-height: 1.51;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background: url(../img/Page_5/Exclude_icon_S.svg) no-repeat;
+}
+
+.cannes_france_1_description button {
+    float: right;
+    margin-top: -99px;
+    width: 188px;
+    height: 57px;
+    border: none;
+    border-radius: 7px;
+    padding: 16px 32px;
+    background-color: #ffffff12;
+}
+
+            /* nice_france_1_block */
+
+
+.nice_france_1_inner {
+    display: flex;
+    gap: 146px;
+    flex-wrap: wrap;
+    padding-top: 184px;
+    padding-bottom: 177px;
+    justify-content: flex-end;
+}
+
+
+
+
+
+@media all and (max-width: 1230px) {
+    .nice_france_1_inner {
+    padding-top: 840px;
+    
+}
+}
+
+@media all and (max-width: 1133px) {
+    .nice_france_1_inner {
+    justify-content: center;
+}
+}
+
+
+.nice_france_1-photo {
+    position: relative;
+    
+    width: 546px;
+    height: 546px;
+} 
+
+
+.nice_france_1-photo img:first-child {
+    position: absolute;
+    top: -11px;
+    right: 28px;
+    z-index: 1;
+    
+}
+
+.nice_france_1-photo p:nth-child(2) {
+    position: absolute;
+    top: 41px;
+    left: 42px;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 25px;
+    background: url(../img/Exclude_icon-photo.svg) no-repeat 1px center;
+}
+
+.nice_france_1-photo img:nth-child(3) {
+    width: 546px;
+    height: 546px;
+}
+
+.nice_france_1-photo p:nth-child(4) {
+    position: absolute;
+    left: 48px;
+    bottom: 250px;
+    width: 82px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.51;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background-color: #FFF9EC;
+    color: #BE7E00;
+}
+
+.nice_france_1-photo h4 {
+    position: absolute;
+    left: 42px;
+    bottom: 187px;
+    width: 310px;
+    height: 48px;
+}
+
+.nice_france_1-photo p:nth-child(5) {
+    position: absolute;
+    left: 42px;
+    bottom: 97px;
+    width: 341px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 1.51;
+}
+
+
+.nice_france_1_description h4 {
+    width: 296px;
+    margin-right: 126px;
+    padding-top: 12px;
+    padding-bottom: 36px;
+}
+
+
+
+.nice_france_1_description p:nth-child(2) {
+    width: 341px;
+    margin-right: 81px;
+    padding-bottom: 184px;
+    font-size: 12px;
+    
+}
+
+.nice_france_1_description p:nth-child(3) {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 12px;
+    
+}
+
+.nice_france_1_description p:nth-child(4) {
+    font-size: 14px;
+    padding-bottom: 58px;
+    
+}
+
+.nice_france_1_description p:nth-child(5) {
+    font-size: 14px;
+    line-height: 1.51;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background: url(../img/Page_5/Exclude_icon_A_2.svg) no-repeat;
+}
+
+.nice_france_1_description button {
+    float: right;
+    margin-top: -99px;
+    width: 188px;
+    height: 57px;
+    border: none;
+    border-radius: 7px;
+    padding: 16px 32px;
+    background-color: #ffffff12;
+}
+
+
+            /* cannes_france_2_block */
+
+
+
+.cannes_france_2_inner {
+    display: flex;
+    gap: 69px;
+    flex-wrap: wrap;
+}
+
+
+
+@media all and (max-width: 1230px) {
+    .cannes_france_2_inner {
+    justify-content: center;
+}
+}
+
+
+.cannes_france_2-photo {
+    position: relative;
+    top: -62px;
+    width: 700px;
+    height: 700px;
+} 
+
+
+.cannes_france_2-photo p:first-child {
+    position: absolute;
+    top: 53px;
+    left: 54px;
+    z-index: 1;
+
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 23px;
+    background: url(../img/Exclude_icon-photo.svg) no-repeat 1px center;
+}
+
+.cannes_france_2-photo img:nth-child(2) {
+    width: 700px;
+    height: 700px;
+}
+
+.cannes_france_2-photo p:nth-child(3) {
+    position: absolute;
+    left: 48px;
+    bottom: 250px;
+    width: 82px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.51;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background-color: #FFF9EC;
+    color: #BE7E00;
+}
+
+.cannes_france_2-photo h4 {
+    position: absolute;
+    left: 48px;
+    bottom: 189px;
+    width: 310px;
+    height: 48px;
+}
+
+.cannes_france_2-photo p:nth-child(4) {
+    position: absolute;
+    left: 48px;
+    bottom: 99px;
+    width: 341px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 1.51;
+}
+
+.cannes_france_2_description h4 {
+    width: 296px;
+    margin-right: 126px;
+    padding-top: 41px;
+    padding-bottom: 36px;
+}
+
+.cannes_france_2_description p:nth-child(2) {
+    width: 341px;
+    padding-bottom: 275px;
+    font-size: 12px;
+    
+}
+
+.cannes_france_2_description p:nth-child(3) {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 12px;
+    
+}
+
+.cannes_france_2_description p:nth-child(4) {
+    font-size: 14px;
+    line-height: 1.51;
+}
+
+.cannes_france_2_description button {
+    float: right;
+    width: 188px;
+    height: 57px;
+    margin-top: -57px;
+    border: none;
+    border-radius: 7px;
+    padding: 16px 32px;
+    background-color: #ffffff12;
+}
+
+            /* nice_france_2_block */
+
+
+.nice_france_2_top {
+    display: flex;
+    gap: 146px;
+    flex-wrap: wrap;
+    padding-top: 238px;
+    padding-bottom: 97px;
+    justify-content: flex-end;
+}
+
+
+
+@media all and (max-width: 1230px) {
+    .nice_france_2_top {
+    padding-top: 840px;
+    
+}
+}
+
+
+@media all and (max-width: 1133px) {
+    .nice_france_2_top {
+    justify-content: center;
+}
+}
+
+
+
+.nice_france_2-photo {
+    position: relative;
+    
+    width: 546px;
+    height: 546px;
+} 
+
+
+.nice_france_2-photo p:first-child {
+    position: absolute;
+    top: 41px;
+    left: 42px;
+    z-index: 1;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 25px;
+    background: url(../img/Exclude_icon-photo.svg) no-repeat 1px center;
+}
+
+.nice_france_2-photo img:nth-child(2) {
+    width: 546px;
+    height: 546px;
+}
+
+.nice_france_2-photo p:nth-child(3) {
+    position: absolute;
+    left: 48px;
+    bottom: 250px;
+    width: 82px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.51;
+    padding: 7px 11px;
+    border-radius: 8px;
+    background-color: #FFF9EC;
+    color: #BE7E00;
+}
+
+.nice_france_2-photo h4 {
+    position: absolute;
+    left: 42px;
+    bottom: 180px;
+    width: 310px;
+    height: 48px;
+}
+
+.nice_france_2-photo p:nth-child(4) {
+    position: absolute;
+    left: 42px;
+    bottom: 90px;
+    width: 341px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 1.51;
+}
+
+.nice_france_2_description h4 {
+    width: 296px;
+    margin-right: 126px;
+    padding-top: 12px;
+    padding-bottom: 36px;
+}
+
+.nice_france_2_description p:nth-child(2) {
+    width: 341px;
+    margin-right: 81px;
+    padding-bottom: 184px;
+    font-size: 12px;
+    
+}
+
+.nice_france_2_description p:nth-child(3) {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: 12px;
+    
+}
+
+.nice_france_2_description p:nth-child(4) {
+    font-size: 14px;
+    line-height: 1.51;
+    padding-bottom: 58px;
+    
+}
+
+.nice_france_2_description p:nth-child(5) {
+    font-size: 14px;
+    line-height: 1.51;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background: url(../img/Page_4/Exclude_icon_A_2.svg) no-repeat;
+}
+
+.nice_france_2_description button {
+    float: right;
+    margin-top: -99px;
+    width: 188px;
+    height: 57px;
+    border: none;
+    border-radius: 7px;
+    padding: 16px 32px;
+    background-color: #ffffff12;
+}
+
+.nice_france_2_inner_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nice_france_2_inner_bottom a {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 8px;
+}
+
+.nice_france_2_inner_bottom a:first-child {
+    margin-left: 20px;
+    margin-bottom: 55px;
+}
+
+.nice_france_2_inner_bottom a:nth-child(2) {
+    margin-right: 23px;  
+}
+
+.nice_france_2_inner_bottom a:hover {
+    border-bottom: 0.5px solid #fff;
+    cursor: pointer;
+}
+
+.vector_horizont {
+    position: relative;
+}
+
+.vector_horizont img {
+    position: absolute;
+    bottom: 67px;
+}
+
+.vector_horizont img:first-child {
+    left: 0;  
+}
+
+.vector_horizont img:nth-child(2) {
+    right: 0;
+}
+
+
+            /* footer */
+
+
+.footer_mask {
+    background: url(../img/Footer_mask.png) no-repeat;
+    background-size: cover;
+
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.footer_feedback {
+    position: relative;
+}
+
+.footer_feedback label {
+    display: inline-block;
+    margin-top: 124px;
+}
+
+.footer_feedback input:nth-child(3) {
+    width: 402px;
+    margin-top: 24px;
+    margin-bottom: 29px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.footer_feedback input:nth-child(5) {
+    width: 402px;
+    margin-bottom: 29px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.footer_feedback input:nth-child(7) {
+    width: 402px;
+    margin-bottom: 226px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.footer_feedback input:nth-child(9) {
+    position: absolute;
+    top: 343px;
+    left: 263px;
+    width: 140px;
+    height: 30px;
+    font-weight: 500;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.footer_feedback a:nth-child(2) {
+    position: absolute;
+    bottom: 266px;
+    left: 335px; 
+}
+
+.footer_feedback a:nth-child(3) {
+    position: absolute;
+    bottom: 266px;
+    left: 377px;
+}
+
+.footer_feedback p:nth-child(4) {
+    padding-left: 32px;
+    background: url(../img/Phone.svg) no-repeat 1px 1px;
+
+}
+
+.footer_feedback p:nth-child(5) {
+    padding: 16px 0px 16px 32px;
+    background: url(../img/Email_icon_footer.svg) no-repeat 0px 22px;
+}
+
+.footer_feedback p:nth-child(6) {
+    padding-left: 32px;
+    padding-bottom: 196px;
+    background: url(../img/Exclude_icon-photo.svg) no-repeat 0px 1px;
+}
+
+.footer_nav_menu {
+    display: flex;
+    gap: 27px;
+}
+
+.footer_nav_menu ul:first-child li {
+    padding: 11px 0px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer_nav_menu ul:first-child li:first-child {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer_nav_menu ul:first-child li:nth-child(10) {
+    padding: 11px 0px 0px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer_nav_menu ul:first-child li:nth-child(11) {
+    padding: 0px 0px 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer_nav_menu ul:nth-child(2) li{
+    color: #ffffff80;
+    font-weight: 300;
+    line-height: 1.37;
+}
+
+.footer_nav_menu ul:nth-child(2) li{
+    padding: 12px 0px;
+    font-weight: 300;
+}
+
+.footer_nav_menu ul:nth-child(2) li:first-child {
+    font-weight: 500;
+}
+
+.footer_nav_menu ul:nth-child(2) li:nth-child(5) {
+    padding-bottom: 0px;
+
+}
+
+.footer_nav_menu ul:nth-child(2) li:nth-child(7) {
+    padding-bottom: 181px;
+
+}

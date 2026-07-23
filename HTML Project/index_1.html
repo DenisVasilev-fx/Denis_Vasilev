@@ -7,8 +7,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="CSS/owl.carousel.css">
     <link rel="stylesheet" href="CSS/style_1.css">
-
+    <style>
+    </style>
     <title>Document</title>
 </head>
 
@@ -31,10 +33,38 @@
                     <li>it</li>
                 </ul>
                 <div class="header__menu">
-                    <img src="img/Menu.svg" alt="Menu">
-                    <nav class="menu">
-
-                    </nav>
+                    <input type="button" id="burger-btn" class="burger-btn" onclick="openHandler()">
+                    <label for="burger-btn" class="burger"></label>
+                    <div class="shadow"></div>
+                    <div class="menu_nav">
+                        <div class="language_menu_nav">
+                            <ul class="language_menu_nav__list">
+                                <li>en</li>
+                                <li>fr</li>
+                                <li>ru</li>
+                                <li>it</li>
+                            </ul>
+                            <input type="button" id="close-btn" class="close-btn" onclick="closeHandler()">
+                            <label for="close-btn" class="close"></label>
+                        </div>
+                        <ul class="menu-list_nav">
+                            <li><a href="Index_2.html">О нас</a></li>
+                            <li><a href="index_3.html">Все объекты</a></li>
+                            <li><a href="Index_4.html">Продажа</a></li>
+                            <li><a href="index_5.html">Аренда</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Купить, продать, арендовать с нами</a></li>
+                            <li><a href="#">Экспертная оценка</a></li>
+                            <li><a href="#">Презентация</a></li>
+                            <li><a href="#">Управление недвижимостью</a></li>
+                            <li><a href="#">Консьерж-сервис</a></li>
+                            <li><a href="#">Связаться с нами</a></li>
+                        </ul>
+                        <div class="privacy_policy">
+                            <a href="#">Наша комиссия</a>
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -42,7 +72,8 @@
             <div class="container main__title">
                 <h1>Подбор <br> недвижимости <br> с полным сопровождением <br> на Вашем языке</h1>
                 <p>
-                    Наше агентство специализируется на премиум объектах <br>и презентует их Вам на русском языке. Подбор
+                    Наше агентство специализируется на премиум объектах <br>и презентует их Вам на русском языке.
+                    Подбор
                     недвижимости <br>во всей Франции с фокусом на самых привилегированных и живописных районах
                     Французского Средиземноморья - Ницца, Канны или Лазурный Берег без лишних временных затрат и
                     наценнок.
@@ -52,7 +83,7 @@
             </div>
         </main>
     </header>
-    <div class="azur_life background_1">
+    <div class="azur_life BG_Grey">
         <div class="container agency-azur_life">
             <div class="agency">
                 <h2>Azur Life</h2>
@@ -82,20 +113,22 @@
             <div class="natalia">
                 <img src="img/Natalia_photo.jpg" alt="">
                 <img src="img/Letter A.png" alt="">
-            </div>
-            <div class="natalia_initials">
                 <p>Наталья Виноградова</p>
                 <p>Основатель агентства</p>
             </div>
         </div>
     </div>
-    <div class="available_objects background_2">
+    <div class="available_objects BG_Black">
         <div class="container">
             <div class="available_objects-tittle">
                 <h2>Доступные объекты</h2>
                 <a href="#">Смотреть все объекты</a>
             </div>
-            <div class="available_objects-photo_list">
+        </div>
+
+
+            <div class="owl-carousel">
+
                 <div class="available_objects-photo_item-1">
                     <img src="img/Selected Icon.svg" alt="Selected">
                     <p>Канны, Франция</p>
@@ -105,6 +138,7 @@
                     <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
                         Английской набережной.</p>
                 </div>
+
                 <div class="available_objects-photo_item-2">
                     <p>Ницца, Франция</p>
                     <img src="img/Nice_France-photo_1.jpg" alt="Nice France">
@@ -113,6 +147,7 @@
                     <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
                         Английской набережной.</p>
                 </div>
+
                 <div class="available_objects-photo_item-3">
                     <p>Ницца, Франция</p>
                     <img src="img/Nice_France-photo_2.jpg" alt="Nice France">
@@ -121,10 +156,11 @@
                     <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
                         Английской набережной.</p>
                 </div>
+
             </div>
         </div>
     </div>
-    <div class="office_Azur_Life background_1">
+    <div class="office_Azur_Life BG_Grey">
         <div class="office_Azur_Life_mask">
             <div class="container">
                 <div class="office_Azur_Life_content">
@@ -146,7 +182,7 @@
             </div>
         </div>
     </div>
-    <div class="property_management_concierge_service background_2">
+    <div class="property_management_concierge_service BG_Black">
         <div class="container">
             <div class="property_management_concierge_service_mask">
                 <div class="property_management_content">
@@ -176,11 +212,11 @@
             </div>
         </div>
     </div>
-    <div class="advantages_Azur_Life background_1">
+    <div class="advantages_Azur_Life BG_Grey">
         <div class="container advantages_Azur_Life_inner">
             <h3>Почему Azur Life <br>Вам подходит</h3>
             <img src="img/Vector_vertical.svg" alt="Vector">
-            <div class="advantages_Azur_Life_content">
+            <div class="advantages_Azur_Life_content owl-carousel">
                 <div class="advantages_Azur_Life_item_1">
                     <img src="img/One_hundred_percent.svg" alt="100%">
                     <p>экспертное сопровождение любой сделки</p>
@@ -204,7 +240,7 @@
 
         </div>
     </div>
-    <div class="blog_home background_2">
+    <div class="blog_home BG_Black">
         <div class="container">
             <div class="blog_home-tittle">
                 <h3>блог</h3>
@@ -250,60 +286,93 @@
                         <label for="check"></label>
                         <label for="check">Оставляя свой email, я принимаю политику конфиденциальности.</label>
                     </form>
-                    <a href="#">О нас</a>
+                    <a href="Index_2.html">О нас</a>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="footer background_1">
+    <footer class="footer BG_Grey">
         <div class="footer_mask">
-          <div class="container">
-            <div class="footer_content">
-                <div class="footer_feedback">
-                    <form action="">
-                        <label>Перезвоните мне</label><br>
-                        <input type="text" placeholder="Имя"> <br>
-                        <input type="tel" placeholder="Телефон"> <br>
-                        <input type="email" placeholder="Email"> <br>
-                        <input type="submit" value="Отправить запрос">
-                    </form>
+            <div class="container">
+                <div class="footer_content">
+                    <div class="footer_feedback">
+                        <form action="">
+                            <label>Перезвоните мне</label><br>
+                            <input type="text" placeholder="Имя"> <br>
+                            <input type="tel" placeholder="Телефон"> <br>
+                            <input type="email" placeholder="Email"> <br>
+                            <input type="submit" value="Отправить запрос">
+                        </form>
                         <a href="https://www.instagram.com"><img src="img/Instagram_icon.svg" alt="Instagram"></a>
                         <a href="https://www.facebook.com"><img src="img/Facebook_icon.svg" alt="Facebook"></a>
                         <p>+33 4 93 16 06 31</p>
                         <p>contact@azur-life.com</p>
                         <p>Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер</p>
-                </div>
-                <div class="footer_nav_menu">
-                    <ul>
-                        <li>Навигация</li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Все объекты</a></li>
-                        <li><a href="#">Продажа</a></li>
-                        <li><a href="#">Аренда</a></li>
-                        <li><a href="#">Купить,  продать, арендовать с нами</a></li>
-                        <li><a href="#">Презентация</a></li>
-                        <li><a href="#">Экспертная оценка</a></li>
-                        <li><a href="#">Управление недвижимостью</a></li>
-                        <li><a href="#">Консьерж-сервис</a></li>
-                        <li><a href="#">Наша комиссия</a></li>
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                    </ul>
-                    <ul>
-                        <li>Регионы</li>
-                        <li><a href="#">Апартаменты в Больё-сюр-Мер</a></li>
-                        <li><a href="#">Вилла в Больё-сюр-Мер</a></li>
-                        <li><a href="#">Вилла в Эзе</a></li>
-                        <li><a href="#">Вилла в Сен-Жан-Кап- <br> Ферра</a></li>
-                        <li><a href="#">Апартаменты в Эзе</a></li>
-                        <li><a href="#">Апартаменты в Сен-Жан-Кап-Ферра</a></li>
-                        <li><a href="#">Design by IDEAS.AGENCY</a></li>
-                    </ul>
+                    </div>
+                    <div class="footer_nav_menu">
+                        <ul>
+                            <li>Навигация</li>
+                            <li><a href="Index_2.html">О нас</a></li>
+                            <li><a href="index_3.html">Все объекты</a></li>
+                            <li><a href="Index_4.html">Продажа</a></li>
+                            <li><a href="index_5.html">Аренда</a></li>
+                            <li><a href="#">Купить, продать, арендовать с нами</a></li>
+                            <li><a href="#">Презентация</a></li>
+                            <li><a href="#">Экспертная оценка</a></li>
+                            <li><a href="#">Управление недвижимостью</a></li>
+                            <li><a href="#">Консьерж-сервис</a></li>
+                            <li><a href="#">Наша комиссия</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                        <ul>
+                            <li>Регионы</li>
+                            <li><a href="#">Апартаменты в Больё-сюр-Мер</a></li>
+                            <li><a href="#">Вилла в Больё-сюр-Мер</a></li>
+                            <li><a href="#">Вилла в Эзе</a></li>
+                            <li><a href="#">Вилла в Сен-Жан-Кап- <br> Ферра</a></li>
+                            <li><a href="#">Апартаменты в Эзе</a></li>
+                            <li><a href="#">Апартаменты в Сен-Жан-Кап-Ферра</a></li>
+                            <li><a href="#">Design by IDEAS.AGENCY</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>  
         </div>
-        
+
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                center: true,
+                loop:true,
+                items:2,
+              
+            });
+        });
+        
+    </script>
+    <script>
+        var menu = document.querySelector('.menu_nav');
+        var shadow = document.querySelector('.shadow');
+
+        function openHandler() {
+            menu.style.right = 0;
+            shadow.className += ' visible';
+            shadow.style.left = 0;
+            shadow.style.top = 0;
+        }
+
+        function closeHandler() {
+            menu.style.right = -525 + 'px';
+            shadow.className = 'shadow';
+            shadow.style.left = '100vw';
+
+        }
+
+    </script>
 </body>
 
 </html>
