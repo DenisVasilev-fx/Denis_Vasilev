@@ -127,38 +127,38 @@
         </div>
 
 
-            <div class="available_objects-photo_list">
+        <div class="available_objects-photo_list owl-carousel">
 
-                <div class="available_objects-photo_item-1">
-                    <img src="img/Selected Icon.svg" alt="Selected">
-                    <p>Канны, Франция</p>
-                    <img src="img/Cannes_France-photo.jpg" alt="Cannes France">
-                    <p>Продажа</p>
-                    <h4>Апартаменты с видом на море на Английской набережной</h4>
-                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
-                        Английской набережной.</p>
-                </div>
-
-                <div class="available_objects-photo_item-2">
-                    <p>Ницца, Франция</p>
-                    <img src="img/Nice_France-photo_1.jpg" alt="Nice France">
-                    <p>Продажа</p>
-                    <h4>Апартаменты с видом на море на Английской набережной</h4>
-                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
-                        Английской набережной.</p>
-                </div>
-
-                <div class="available_objects-photo_item-3">
-                    <p>Ницца, Франция</p>
-                    <img src="img/Nice_France-photo_2.jpg" alt="Nice France">
-                    <p>Продажа</p>
-                    <h4>Апартаменты с видом на море на Английской набережной</h4>
-                    <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
-                        Английской набережной.</p>
-                </div>
-
+            <div class="available_objects-photo_item-1">
+                <img src="img/Selected Icon.svg" alt="Selected">
+                <p>Канны, Франция</p>
+                <img src="img/Cannes_France-photo.jpg" alt="Cannes France">
+                <p>Продажа</p>
+                <h4>Апартаменты с видом на море на Английской набережной</h4>
+                <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
+                    Английской набережной.</p>
             </div>
+
+            <div class="available_objects-photo_item-2">
+                <p>Ницца, Франция</p>
+                <img src="img/Nice_France-photo_1.jpg" alt="Nice France">
+                <p>Продажа</p>
+                <h4>Апартаменты с видом на море на Английской набережной</h4>
+                <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
+                    Английской набережной.</p>
+            </div>
+
+            <div class="available_objects-photo_item-3">
+                <p>Ницца, Франция</p>
+                <img src="img/Nice_France-photo_2.jpg" alt="Nice France">
+                <p>Продажа</p>
+                <h4>Апартаменты с видом на море на Английской набережной</h4>
+                <p>Полностью отремонтированная 3-комнатная квартира на 5 этаже в небольшой резиденции на знаменитой
+                    Английской набережной.</p>
+            </div>
+
         </div>
+    </div>
     </div>
     <div class="office_Azur_Life BG_Grey">
         <div class="office_Azur_Life_mask">
@@ -216,7 +216,7 @@
         <div class="container advantages_Azur_Life_inner">
             <h3>Почему Azur Life <br>Вам подходит</h3>
             <img src="img/Vector_vertical.svg" alt="Vector">
-            <div class="advantages_Azur_Life_content owl-carousel">
+            <div class="advantages_Azur_Life_content">
                 <div class="advantages_Azur_Life_item_1">
                     <img src="img/One_hundred_percent.svg" alt="100%">
                     <p>экспертное сопровождение любой сделки</p>
@@ -344,8 +344,22 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="JS/owl.carousel.min.js"></script>
     <script>
-        
-        
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                items: 2,
+                margin:10,
+                center:true,
+            });
+
+
+
+
+        });
+    </script>
+    <script>
+
+
     </script>
     <script>
         var menu = document.querySelector('.menu_nav');
